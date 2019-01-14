@@ -159,7 +159,21 @@ console.log('DRILL 7 >>> ',findFactorials(3));
 
 
 //DRILL 8 Fibonaci
+let fibonaccilatorizor = (num) => {
 
+  if(num === 0){
+    return 0;
+  }
+
+  if(num === 1){
+    return 1;
+  }
+
+  return fibonaccilatorizor(num - 2) + fibonaccilatorizor(num - 1);
+
+};
+
+console.log('DRILL 8 >>> ',fibonaccilatorizor(7));
 
 
 //DRILL 9 Anagrams
