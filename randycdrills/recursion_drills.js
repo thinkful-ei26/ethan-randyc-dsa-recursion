@@ -2,21 +2,36 @@
 
 //WORKS
 //DRILL 1 
-let countSheep = (n) => {
+
+console.log('DRILL 1 >>> ');
  
-  if(n === 1){
+let countSheep = (num) => {
  
-    return 1;
+  if(num === 0){
+ 
+    return 0;
 
   }
- 
 
-  countSheep(n - 1);
+  console.log('sheep ',num);
+  
+  countSheep(num - 1);
 
 };
 
-console.log('DRILL 1 >>> ',countSheep(15));
+countSheep(6);
+ 
 
+//DRILL 1 iterating version
+// let countSheepI = (n) => {
+
+
+
+
+
+// }
+
+// console.log('DRILL 1 Iteration version >>> ',countSheepI(15));
 
 
 //WORKS
@@ -26,7 +41,7 @@ let myArray = [5,8,9,1,3];
 
 let doubleValues = (array) => {
 
-  console.log(array.length);
+  //console.log(array.length);
 
   if(array.length === 0){
 
